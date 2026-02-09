@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Контакты — PizzaHouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo.svg" alt="PizzaHouse" class="logo-img" width="56" height="56">
+      <span class="logo">PizzaHouse</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню"><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="product.html">Меню</a></li>
+        <li><a href="cart.html">Корзина</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="cabinet.html">Вход</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Контакты</h1>
+    <p class="slogan">Горячая пицца — горячее настроение!</p>
+    <section class="contacts-block">
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <strong>Телефон:</strong>
+        <a href="tel:+31123456789">+31 123 456 789</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <strong>Адрес:</strong>
+        Amsterdam, Pizza Street 10
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">🕐</span>
+        <strong>Часы работы:</strong>
+        Пн–Вс 10:00 – 23:00
+      </div>
+    </section>
+    <section class="map-section">
+      <h2>Мы на карте</h2>
+      <div id="mapContainer" class="map-container">
+        <iframe
+          id="storeMap"
+          class="store-map"
+          title="Карта магазина PizzaHouse"
+          loading="lazy"
+          src=""
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 PizzaHouse. Горячая пицца — горячее настроение!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

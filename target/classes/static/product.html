@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Товар — PizzaHouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo.svg" alt="PizzaHouse" class="logo-img" width="56" height="56">
+      <span class="logo">PizzaHouse</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню"><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="product.html">Меню</a></li>
+        <li><a href="cart.html">Корзина</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="cabinet.html">Вход</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div id="productMenu" class="product-menu" hidden>
+      <h2>Меню</h2>
+      <div class="pizza-grid" id="menuGrid"></div>
+    </div>
+    <div id="productDetail" class="product-detail" hidden>
+      <!-- Контент подставляется скриптом по ?id= -->
+      <div class="product-loading" id="productLoading">Загрузка...</div>
+      <div class="product-content" id="productContent" hidden>
+        <div class="product-gallery">
+          <img id="pizzaImage" src="" alt="" width="400" height="400" loading="eager">
+        </div>
+        <div class="product-info">
+          <h1 id="productTitle"></h1>
+          <p class="product-desc" id="productDesc"></p>
+          <div class="product-composition">
+            <h3>Состав</h3>
+            <ul id="productComposition"></ul>
+          </div>
+          <p class="product-price"><strong>Цена за единицу: <span id="productPrice"></span></strong></p>
+          <form id="orderForm" class="order-form">
+            <label for="count">Количество</label>
+            <input type="number" id="count" name="count" min="1" max="20" value="1" required>
+            <button type="submit">В корзину</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 PizzaHouse. Горячая пицца — горячее настроение!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
