@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PizzaHouse — Главная</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo.svg" alt="PizzaHouse" class="logo-img" width="56" height="56">
+      <span class="logo">PizzaHouse</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню"><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="product.html">Меню</a></li>
+        <li><a href="cart.html">Корзина</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="cabinet.html">Вход</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Самая вкусная пицца в городе</h1>
+    <p>Доставка за 30 минут или пицца бесплатно</p>
+    <button class="btn-hero" id="btnOrder">Заказать сейчас</button>
+  </section>
+
+  <main class="container">
+    <h2>Популярные пиццы</h2>
+    <div class="pizza-grid">
+      <article class="pizza-card" data-product-id="1">
+        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop" alt="Пепперони" loading="lazy">
+        <h3>Пепперони</h3>
+        <p>Острая колбаса пепперони, моцарелла, томатный соус</p>
+        <button class="btn-card" data-href="product.html?id=1">Подробнее</button>
+      </article>
+      <article class="pizza-card" data-product-id="2">
+        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop" alt="4 сыра" loading="lazy">
+        <h3>4 сыра</h3>
+        <p>Моцарелла, дор блю, пармезан, горгонзола</p>
+        <button class="btn-card" data-href="product.html?id=2">Подробнее</button>
+      </article>
+      <article class="pizza-card" data-product-id="3">
+        <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400&h=300&fit=crop" alt="Маргарита" loading="lazy">
+        <h3>Маргарита</h3>
+        <p>Классическая итальянская пицца с томатами и базиликом</p>
+        <button class="btn-card" data-href="product.html?id=3">Подробнее</button>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 PizzaHouse. Горячая пицца — горячее настроение!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

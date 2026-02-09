@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Личный кабинет — PizzaHouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo.svg" alt="PizzaHouse" class="logo-img" width="56" height="56">
+      <span class="logo">PizzaHouse</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню"><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="product.html">Меню</a></li>
+        <li><a href="cart.html">Корзина</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="account.html">Кабинет</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Личный кабинет</h1>
+    <p class="welcome-msg">Вы вошли как <strong id="userName"></strong></p>
+    <h2>Мои заказы</h2>
+    <div id="orders" class="orders-list"></div>
+    <button type="button" class="btn-logout" id="btnLogout">Выйти</button>
+  </main>
+
+  <footer>
+    <p>© 2026 PizzaHouse. Горячая пицца — горячее настроение!</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

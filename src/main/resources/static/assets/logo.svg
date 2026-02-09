@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="crust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e6b85c"/>
+      <stop offset="100%" style="stop-color:#c9952e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="52" fill="url(#crust)" stroke="#a67c2e" stroke-width="3"/>
+  <circle cx="60" cy="60" r="38" fill="#c41e3a"/>
+  <ellipse cx="60" cy="58" rx="12" ry="10" fill="#f4d03f"/>
+  <ellipse cx="45" cy="52" rx="6" ry="5" fill="#e74c3c"/>
+  <ellipse cx="75" cy="55" rx="5" ry="6" fill="#e74c3c"/>
+  <ellipse cx="58" cy="68" rx="4" ry="5" fill="#e74c3c"/>
+</svg>
