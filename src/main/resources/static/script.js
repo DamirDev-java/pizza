@@ -1,4 +1,4 @@
-// API бэкенда (PizzaController: /api/v1/pizza)
+
 var API_BASE = "/api/v1/pizza";
 
 var PRODUCTS = {
@@ -208,10 +208,9 @@ function initProductPage() {
 
 function initMap() {
   var iframe = document.getElementById("storeMap");
-  if (iframe) iframe.src = "https://maps.google.com/maps?q=Amsterdam+Pizza+Street+10&t=&z=15&ie=UTF8&iwloc=&output=embed";
+  if (iframe) iframe.src = "https://maps.google.com/maps?q=БГТУ+Военмех+Санкт-Петербург&t=&z=17&ie=UTF8&iwloc=&output=embed";
 }
 
-// Личный кабинет — только на account.html (есть userName и orders)
 function initAccountPage() {
   var userNameEl = document.getElementById("userName");
   var ordersEl = document.getElementById("orders");
