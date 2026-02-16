@@ -2,9 +2,33 @@
 var API_BASE = "/api/v1/pizza";
 
 var PRODUCTS = {
-  1: { id: 1, name: "Пепперони", description: "Острая колбаса пепперони, моцарелла, томатный соус.", composition: ["Тесто", "Томатный соус", "Моцарелла", "Пепперони"], price: "9 €", priceNum: 9, image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500&h=500&fit=crop" },
-  2: { id: 2, name: "4 сыра", description: "Моцарелла, дор блю, пармезан, горгонзола.", composition: ["Тесто", "Сливочный соус", "Моцарелла", "Дор Блю", "Пармезан", "Горгонзола"], price: "11 €", priceNum: 11, image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&h=500&fit=crop" },
-  3: { id: 3, name: "Маргарита", description: "Классическая пицца с томатами и базиликом.", composition: ["Тесто", "Томатный соус", "Моцарелла", "Помидоры", "Базилик"], price: "8 €", priceNum: 8, image: "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=500&h=500&fit=crop" }
+  1: {
+    id: 1,
+    name: "Пепперони",
+    description: "Острая колбаса пепперони, моцарелла, томатный соус.",
+    composition: ["Тесто", "Томатный соус", "Моцарелла", "Пепперони"],
+    price: "500 ₽",
+    priceNum: 500,
+    image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=500&h=500&fit=crop"
+  },
+  2: {
+    id: 2,
+    name: "4 сыра",
+    description: "Моцарелла, дор блю, пармезан, горгонзола.",
+    composition: ["Тесто", "Сливочный соус", "Моцарелла", "Дор Блю", "Пармезан", "Горгонзола"],
+    price: "500 ₽",
+    priceNum: 500,
+    image: "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=500&h=500&fit=crop"
+  },
+  3: {
+    id: 3,
+    name: "Маргарита",
+    description: "Классическая пицца с томатами и базиликом.",
+    composition: ["Тесто", "Томатный соус", "Моцарелла", "Помидоры", "Базилик"],
+    price: "500 ₽",
+    priceNum: 500,
+    image: "https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=500&h=500&fit=crop"
+  }
 };
 
 var CART_KEY = "pizzaCart";
@@ -60,7 +84,7 @@ function initNavigation() {
   }
 }
 
-// Вход/регистрация — только на cabinet.html (есть authForm)
+
 function initAuth() {
   var form = document.getElementById("authForm");
   if (!form) return;
@@ -336,14 +360,14 @@ function initCartPage() {
         "<div class=\"cart-row\" data-index=\"" + index + "\">" +
           "<span class=\"cart-item-name\">" + item.pizzaName + "</span>" +
           "<input type=\"number\" class=\"cart-item-qty\" value=\"" + item.quantity + "\" min=\"1\" max=\"20\" data-index=\"" + index + "\">" +
-          "<span class=\"cart-item-price\">" + item.price + " €</span>" +
-          "<span class=\"cart-item-amount\">" + item.amount + " €</span>" +
+          "<span class=\"cart-item-price\">" + item.price + " Р</span>" +
+          "<span class=\"cart-item-amount\">" + item.amount + " Р</span>" +
           "<button type=\"button\" class=\"cart-item-remove\" data-index=\"" + index + "\">×</button>" +
         "</div>"
       );
     }).join("");
 
-    if (cartTotalSum) cartTotalSum.textContent = totalSum + " €";
+    if (cartTotalSum) cartTotalSum.textContent = totalSum + " Р";
 
     cartList.querySelectorAll(".cart-item-remove").forEach(function (btn) {
       btn.addEventListener("click", function () {
