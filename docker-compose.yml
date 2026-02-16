@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     ports:
-      - "5433:5432"  # Измени порт на 5433 чтобы не конфликтовал с локальной БД
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
@@ -22,7 +22,7 @@ services:
       - postgres
     ports:
       - "8080:8080"
-    environment:  # ДОБАВЬ ЭТО!
+    environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/pizza
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=postgres
